@@ -21,6 +21,7 @@ RUN apt-get install -y gcc openjdk-8-jdk ant
 # 3) install packages
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -U gensim && \
+    pip install --no-cache-dir python-pdfbox && \
     pip install --no-cache-dir Django==3.1.5
 
 # 4) change back to notebook user
